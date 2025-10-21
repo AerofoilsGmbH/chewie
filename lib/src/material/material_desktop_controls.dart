@@ -550,7 +550,7 @@ class _MaterialDesktopControlsState extends State<MaterialDesktopControls>
   void _updateState() {
     if (!mounted) return;
 
-    final bool buffering = getIsBuffering(controller);
+    final bool buffering = controller.value.isBuffering;
 
     // display the progress bar indicator only after the buffering delay if it has been set
     if (chewieController.progressIndicatorDelay != null) {

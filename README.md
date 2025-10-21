@@ -289,7 +289,7 @@ final playerWidget = Chewie(
 
 ## ⚠️ Android warning
 
-There is an open [issue](https://github.com/flutter/flutter/issues/165149) that the buffering state of a video is not reported correctly. With this, the loading state is always triggered, hiding controls to play, pause or seek the video. A workaround was implemented until this is fixed, however it can't be perfect and still hides controls if seeking backwards while the video is paused, as a result of lack of correct buffering information (see #912).
+There was an open [issue](https://github.com/flutter/flutter/issues/165149) that the buffering state of a video is not reported correctly. With this, the loading state is always triggered, hiding controls to play, pause or seek the video. A workaround was implemented until this is fixed, however it can't be perfect and still hides controls if seeking backwards while the video is paused, as a result of lack of correct buffering information (see #912).
 
 Add the following to partly fix this behavior:
 
